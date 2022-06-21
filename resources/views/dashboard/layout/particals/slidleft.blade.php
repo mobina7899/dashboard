@@ -39,12 +39,14 @@
                     <span>نمونه کارها</span>
                 </a>
             </li>
+            @can('ismodir')
             <li>
                 <a href="{{route('users.index')}}">
 
                     <span>تعریف تسک</span>
                 </a>
             </li>
+            @endcan
             @can('ismodir')
                 <li>
                     <a href="#" onClick="return false;" class="menu-toggle">
